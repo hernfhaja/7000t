@@ -1,18 +1,20 @@
 <template>
-  <div>
-    <Navbar></Navbar>
-   <p>body</p>
+  <div class="main">
+    <div class="navbar">
+      <Navbar></Navbar>
+    </div>
+   <div class="body">
+     <h1>body</h1>
+   </div>
   </div>
 </template>
 
 <script>
 
-import Navbar from "./Navbar.vue"
+import Navbar from './Navbar'
 
 export default {
-  components : {
-    'Navbar' : Navbar
-  },
+  components: { 'Navbar': Navbar },
   data () {
     return {
     }
@@ -20,7 +22,14 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-
+<style >
+.main{
+  border: 5px solid red;
+}
+.navbar{
+  border: 3px solid orange;
+}
+.body{
+  border: 3px solid yellow;
+}
 </style>
