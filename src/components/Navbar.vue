@@ -1,13 +1,14 @@
 <template>
 <div class="hearder">
   <nav class="nav">
-    <div class="img">
-      <div>
-        <li>
-         <a href="">สมัคร</a>
-         <a href="">ดูข้อมูล</a>
-        </li>
-     </div>
+    <div class="logo">
+      <img class="logo_img" src="./img/logo.png" alt="">
+    </div>
+    <div>
+      <li>
+        <a href="">สมัคร</a>
+        <a href="">ดูข้อมูล</a>
+      </li>
     </div>
   </nav>
 </div>
@@ -30,8 +31,12 @@ export default {
 .nav{
   border: 2px solid black;
 }
-.img{
+.logo{
   border: 2px solid black;
+}
+.logo_img{
+  width: 200px;
+  height: 200px;
 }
 
 </style>
