@@ -2,9 +2,12 @@
   <div class="main">
     <Navbar></Navbar>
     <div class="body">
-     <div>
-        <h1>body</h1>
-     </div>
+        <h1>โครงการ 1 ตำบล 1 แสงสว่าง</h1>
+        <input type="text" placeholder="ตำบล..." />
+        <button id="btn_search" >ค้นหา</button>
+        <p>{{}}</p>
+        <button id="btn_regis" @click="getNumber">สมัคร</button>
+
     </div>
   </div>
 </template>
@@ -17,6 +20,11 @@ export default {
   components: { 'Navbar': Navbar },
   data () {
     return {
+    }
+  },
+  methods : {
+    getNumber(){
+       this.$router.push('/Rule');
     }
   }
 }
