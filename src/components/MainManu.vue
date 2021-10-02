@@ -1,11 +1,11 @@
 <template>
   <div class="main">
-    <div class="navbar">
-      <Navbar></Navbar>
+    <Navbar></Navbar>
+    <div class="body">
+     <div>
+        <h1>body</h1>
+     </div>
     </div>
-   <div class="body">
-     <h1>body</h1>
-   </div>
   </div>
 </template>
 
@@ -24,6 +24,7 @@ export default {
 
 <style >
 .main{
+  margin: 0%;
   border: 5px solid red;
 }
 .navbar{
