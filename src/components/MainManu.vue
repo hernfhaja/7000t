@@ -1,15 +1,20 @@
 <template>
   <div>
+    <Navbar></Navbar>
    <p>body</p>
   </div>
 </template>
 
 <script>
+
+import Navbar from "./Navbar.vue"
+
 export default {
-  name: 'MainManu',
+  components : {
+    'Navbar' : Navbar
+  },
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
     }
   }
 }
@@ -17,18 +22,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+
 </style>
