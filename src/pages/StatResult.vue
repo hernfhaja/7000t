@@ -1,25 +1,30 @@
 <template>
   <div class="main">
-    <Header bgcolor="faulse" ></Header>
+    <Logo ></Logo>
+    <div class="divExtranal">
+    <div   class="nav2"  @click="sendData" >สมัคร</div>
+    <div class="nav1" :class="{nav1 : available}" @click="getData" >ดูข้อมูล</div>
+    </div>
     <div class="body">
-    
+
     </div>
   </div>
 </template>
 
 <script>
-import Header from '../components/Header'
+import Navbar from '../components/Navbar'
+import Logo from '../components/Logo'
 
 export default {
-  components: { 'Header': Header
+  components: { 'Navbar': Navbar,'Logo': Logo
    },
   data () {
     return {
     }
   },
   methods : {
-    getNumber(){
-       this.$router.push('/Rule');
+    sendData(){
+       this.$router.push('/');
     }
   }
 }

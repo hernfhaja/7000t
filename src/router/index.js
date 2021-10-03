@@ -5,6 +5,7 @@ import Rule from "@/pages/Rule";
 import Form from "@/pages/Form";
 import AppointMent from "@/pages/AppointMent";
 import Registered from "@/pages/Registered";
+import StatResult from "@/pages/StatResult";
 
 Vue.use(Router);
 
@@ -34,6 +35,11 @@ export default new Router({
       path: "/Registered",
       name: "Registered",
       component: Registered
+    },
+    {
+      path: "/StatResult",
+      name: "StatResult",
+      component: StatResult
     }
   ]
 });

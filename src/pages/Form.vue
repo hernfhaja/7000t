@@ -61,6 +61,7 @@ export default {
   display: flex;
   flex-direction: column;
   width: 100%;
+
   align-items: center;
   justify-content: center ;
 }
@@ -75,6 +76,7 @@ export default {
 
   border-image-slice: 0.5;
   border-width: 0.01px;
+  padding: 12px 20px;
   border-image-source: linear-gradient(90deg, rgba(247,201,104,1) 0%, rgba(247,178,68,1) 100%, rgba(247,178,68,1) 100%);
 }
 
@@ -89,6 +91,13 @@ export default {
     border: 2px solid #f6cc87;
     font-size: 20px;
 }
-
+.form_area{
+   height: 200px;
+    width: 100%;
+   background:white;
+    border-radius: 5px;
+    border: 2px solid #f6cc87;
+    font-size: 20px;
+}
 
 </style>
