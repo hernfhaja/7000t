@@ -1,9 +1,12 @@
 <template>
-    <nav class="nav_logo">
-      <div class="logo">
-        <img class="logo_img" src="../img/logo.png" alt="">
+
+  <div class="logo">
+     <img src="../assets/img/logo.png" alt="">
+      <div class="text">
+      <h3 class="h">จุดประทีป 7000 ตำบลทั่วไทย</h3>
+      <p class="p">ธรรมล้านดวง</p>
       </div>
-    </nav>
+  </div>
 </template>
 
 <script>
@@ -16,17 +19,36 @@ export default {
 </script>
 
 <style >
-.header{
-  border: 2px solid plum;
-}
-.nav_logo{
-  border: 2px solid black;
-}
 .logo{
-  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
-.logo_img{
-  width: 125px;
-  height: 125px;
+.logo > img{
+  flex-direction: column;
+  width: 25%;
+  height: 30%;
+}
+.logo > h1{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  
+}
+
+.text{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   margin-left: 20px;
+}
+
+.h{
+  margin-bottom: 0;
+}
+
+.p{
+  margin-top: 5px;
 }
 </style>

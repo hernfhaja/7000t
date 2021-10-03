@@ -1,43 +1,69 @@
 <template>
-  <div class="hearder">
-    <nav class="nav">
-      <Logo></Logo>
-      <ul class="nav_manu">
-        <li class="nav_item">
-          <a class="nav_link" href="">สมัคร</a>
-          <a class="nav_link" href="">ดูข้อมูล</a>
-        </li>
-      </ul>
-    </nav>
+
+  <div class="divExtranal">
+    <div  id="foo" v-bind:class="{nav1: available , nav2: !available}" href="">การ์ดของคุณ</div>
+    <div class="nav2"  href="" >ดูข้อมูล</div>
   </div>
 </template>
 
 <script>
 import Logo from './Logo'
 export default {
+  props:["available"],
   components: { 'Logo': Logo },
   data () {
     return {
+      isactive : true
     }
-  }
+  },
+  methods: {
+
+    }
 }
 </script>
 
 <style >
-.header{
-  border: 2px solid plum;
+
+.divExtranal{
+ display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center ;
+  height: 50px;
+  background: white;
+  border-radius: 10px;
+  width: 100%;
+-webkit-box-shadow: 2px 2px 6px -3px #000000;
+box-shadow: 2px 2px 6px -3px #000000;
 }
-.nav{
-  border: 2px solid black;
+
+.nav1{
+
+  /* background: rgb(247,201,104); */
+background: linear-gradient(90deg, rgba(247,201,104,1) 0%, rgba(247,178,68,1) 100%, rgba(247,178,68,1) 100%);
+   color: white;
+   border-radius: 18px;
+   border: 2px solid ;
+border-radius: 18px;
+width: 70%;
+ height: 90%;
+ display: flex;
+  align-items: center;
+  justify-content: center ;
 }
-.nav_manu{
-  list-style-type:none;
-}
-.nav_item{
-  border: 2px solid black;
-}
-.nav_link{
-  border: 2px solid black;
+
+.nav2{
+
+  background: white ;
+   color: black;
+   border-radius: 18px;
+   border: 2px solid white ;
+border-radius: 18px;
+width: 70%;
+ height: 90%;
+ display: flex;
+  align-items: center;
+  justify-content: center ;
 }
 
 </style>

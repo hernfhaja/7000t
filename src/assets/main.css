@@ -1,0 +1,72 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0 0 0 0;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  margin: 0 0 0 0;
+}
+
+.button1 {
+  height: 30px;
+  width: 100px;
+  background: rgb(247, 201, 104);
+  background: linear-gradient(
+    90deg,
+    rgba(247, 201, 104, 1) 0%,
+    rgba(247, 178, 68, 1) 100%,
+    rgba(247, 178, 68, 1) 100%
+  );
+  color: white;
+  border-radius: 18px;
+  border: 2px solid;
+}
+
+.button2 {
+  height: 40px;
+  width: 150px;
+  background: rgb(247, 201, 104);
+  background: linear-gradient(
+    90deg,
+    rgba(247, 201, 104, 1) 0%,
+    rgba(247, 178, 68, 1) 100%,
+    rgba(247, 178, 68, 1) 100%
+  );
+  color: white;
+  border-radius: 20px;
+  border: 2px solid #f6cc87;
+}
+
+.ex {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.in {
+  text-align: center;
+  width: 90%;
+  border-radius: 0px 28px 28px 0px;
+  background: rgb(247, 201, 104);
+  background: linear-gradient(
+    90deg,
+    rgba(247, 201, 104, 1) 0%,
+    rgba(247, 178, 68, 1) 100%,
+    rgba(247, 178, 68, 1) 100%
+  );
+}
+
+@font-face {
+  font-family: 'sukhumvit_setbold';
+  src: local("sukhumvit_setbold"),
+       url('./fonts/sukhumvitset-bold-webfont.woff') format("truetype"),
+       url('./fonts/sukhumvitset-bold-webfont.woff2') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+
+}

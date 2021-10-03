@@ -1,10 +1,10 @@
 import Vue from "vue";
 import Router from "vue-router";
-import MainManu from "@/components/MainManu";
-import Rule from "@/components/Rule";
-import Form from "@/components/Form";
-import AppointMent from "@/components/AppointMent";
-import Registered from "@/components/Registered";
+import MainManu from "@/pages/MainManu";
+import Rule from "@/pages/Rule";
+import Form from "@/pages/Form";
+import AppointMent from "@/pages/AppointMent";
+import Registered from "@/pages/Registered";
 
 Vue.use(Router);
 
